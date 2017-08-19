@@ -69,7 +69,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit7]
-FileName=..\..\wx_test\Wind_chill_effect.cpp
+FileName=..\..\..\wx_test\Wind_chill_effect.cpp
 CompileCpp=1
 Folder=WindChillIndex
 Compile=1
@@ -79,7 +79,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit8]
-FileName=..\..\wx_test\wx-testApp.h
+FileName=..\..\..\wx_test\Wind_chill_effect.h
 CompileCpp=1
 Folder=WindChillIndex
 Compile=1

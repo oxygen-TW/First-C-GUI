@@ -538,9 +538,7 @@ object frmNewForm: TfrmNewForm
   Wx_Center = True
   Wx_Hidden = False
   Wx_SizeToContents = True
-  Wx_Filename = 
-    'C:/Users/Oxygen/Desktop/'#31243#24335#35486#35328'/C++/Wind chill effect/GUI/Images/Wi' +
-    'ndChillIndexFrm_frmNewForm_XPM.xpm'
+  Wx_Filename = 'Images/WindChillIndexFrm_frmNewForm_XPM.xpm'
   Wx_GeneralStyle = []
   Wx_DialogStyle = [wxCAPTION, wxSYSTEM_MENU, wxDIALOG_NO_PARENT, wxMINIMIZE_BOX, wxCLOSE_BOX]
   Wx_DesignerType = dtWxFrame

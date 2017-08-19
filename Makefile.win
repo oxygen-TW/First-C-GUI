@@ -1,7 +1,7 @@
 # Project: WindChillIndex
 # Compiler: Default GCC compiler
 # Compiler Type: MingW 3
-# Makefile created by wxDev-C++ IDE 7.4.2.569 on 19/08/17 20:39
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 19/08/17 21:23
 
 WXLIBNAME = wxmsw29u
 CPP       = g++.exe
@@ -42,8 +42,8 @@ Objects/MingW/WindChillIndexApp.o: $(GLOBALDEPS) WindChillIndexApp.cpp WindChill
 Objects/MingW/WindChillIndexFrm.o: $(GLOBALDEPS) WindChillIndexFrm.cpp WindChillIndexFrm.h Wind_chill_effect.h Images/WindChillIndexFrm_frmNewForm_XPM.xpm
 	$(CPP) -c WindChillIndexFrm.cpp -o Objects/MingW/WindChillIndexFrm.o $(CXXFLAGS)
 
-Objects/MingW/Wind_chill_effect.o: $(GLOBALDEPS) ../../wx_test/Wind_chill_effect.cpp
-	$(CPP) -c ../../wx_test/Wind_chill_effect.cpp -o Objects/MingW/Wind_chill_effect.o $(CXXFLAGS)
+Objects/MingW/Wind_chill_effect.o: $(GLOBALDEPS) ../../../wx_test/Wind_chill_effect.cpp
+	$(CPP) -c ../../../wx_test/Wind_chill_effect.cpp -o Objects/MingW/Wind_chill_effect.o $(CXXFLAGS)
 
 Objects/MingW/WindChillIndex_private.res: Objects/MingW/WindChillIndex_private.rc WindChillIndexApp.rc 
 	$(WINDRES) --input-format=rc -o Objects/MingW/WindChillIndex_private.res $(RCINCS) Objects/MingW/WINDCH~1.RC -O coff

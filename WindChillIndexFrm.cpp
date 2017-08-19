@@ -1,8 +1,8 @@
-///-----------------------------------------------------------------
+ï»¿///-----------------------------------------------------------------
 ///
 /// @file      WindChillIndexFrm.cpp
 /// @author    Oxygen
-/// Created:   2017/8/19 ¤U¤È 07:13:29
+/// Created:   2017/8/19 ä¸‹åˆ 07:13:29
 /// @section   DESCRIPTION
 ///            WindChillIndexFrm class implementation
 ///
@@ -14,7 +14,7 @@
 //Header Include Start and Header Include End
 //wxDev-C++ designer will remove them
 ////Header Include Start
-#include "C:/Users/Oxygen/Desktop/µ{¦¡»y¨¥/C++/Wind chill effect/GUI/Images/WindChillIndexFrm_frmNewForm_XPM.xpm"
+#include "Images/WindChillIndexFrm_frmNewForm_XPM.xpm"
 ////Header Include End
 
 //----------------------------------------------------------------------------
@@ -56,7 +56,7 @@ void WindChillIndexFrm::CreateGUIControls()
 
 	WxStaticText3 = new wxStaticText(this, ID_WXSTATICTEXT3, _("Wind Speed (km/h)"), wxPoint(160, 11), wxDefaultSize, 0, _("WxStaticText3"));
 
-	WxStaticText2 = new wxStaticText(this, ID_WXSTATICTEXT2, _("Temperature(¢XC)"), wxPoint(15, 11), wxDefaultSize, 0, _("WxStaticText2"));
+	WxStaticText2 = new wxStaticText(this, ID_WXSTATICTEXT2, _("Temperature(ï¿½XC)"), wxPoint(15, 11), wxDefaultSize, 0, _("WxStaticText2"));
 
 	WxStaticText1 = new wxStaticText(this, ID_WXSTATICTEXT1, _("Wind-Chill Index:"), wxPoint(17, 67), wxDefaultSize, 0, _("WxStaticText1"));
 	WxStaticText1->SetForegroundColour(wxColour(0,0,128));
@@ -117,6 +117,6 @@ void WindChillIndexFrm::WxButton2Click(wxCommandEvent& event)
 void WindChillIndexFrm::WxButton3Click(wxCommandEvent& event)
 {
 	// insert your code here
-	wxString About="By oxygen\nCompile time:2017/08/19\n\n³oµ{¦¡©l©ó¨º°gÀÛªº®É´Á\n¦³µÛ³\¦h¥¼³Q¶D»¡ªº¬G¨Æ";
+	wxString About="Designed by oxygen\nCompile Date:2017/08/19\n\n³oµ{¦¡©l©ó¨º°gÀÛªº®É´Á\n¦³µÛ¨º¨Ç¥¼³Q¶D»¡ªº¬G¨Æ";
     MessageBox(NULL, About, _T("About"), wxICON_INFORMATION);
 }
