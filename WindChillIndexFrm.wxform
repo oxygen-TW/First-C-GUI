@@ -739,9 +739,9 @@ object frmNewForm: TfrmNewForm
   object WxStaticText2: TWxStaticText
     Left = 15
     Top = 11
-    Width = 98
+    Width = 93
     Height = 19
-    Caption = 'Temperature('#176'C)'
+    Caption = 'Temperature(C)'
     TabOrder = 5
     Wx_BGColor = clBlack
     Wx_Class = 'wxStaticText'

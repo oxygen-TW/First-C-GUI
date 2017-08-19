@@ -56,7 +56,7 @@ void WindChillIndexFrm::CreateGUIControls()
 
 	WxStaticText3 = new wxStaticText(this, ID_WXSTATICTEXT3, _("Wind Speed (km/h)"), wxPoint(160, 11), wxDefaultSize, 0, _("WxStaticText3"));
 
-	WxStaticText2 = new wxStaticText(this, ID_WXSTATICTEXT2, _("Temperature(�XC)"), wxPoint(15, 11), wxDefaultSize, 0, _("WxStaticText2"));
+	WxStaticText2 = new wxStaticText(this, ID_WXSTATICTEXT2, _("Temperature(C)"), wxPoint(15, 11), wxDefaultSize, 0, _("WxStaticText2"));
 
 	WxStaticText1 = new wxStaticText(this, ID_WXSTATICTEXT1, _("Wind-Chill Index:"), wxPoint(17, 67), wxDefaultSize, 0, _("WxStaticText1"));
 	WxStaticText1->SetForegroundColour(wxColour(0,0,128));
