@@ -18,11 +18,12 @@
 #ifndef WX_PRECOMP
 	#include <wx/wx.h>
 	#include <wx/frame.h>
+	#include <wx/msgdlg.h>
 #else
 	#include <wx/wxprec.h>
 #endif
 
-//Do not add custom headers between 
+//Do not add custom headers between
 //Header Include Start and Header Include End.
 //wxDev-C++ designer will remove them. Add custom headers after the block.
 ////Header Include Start
@@ -40,7 +41,7 @@ class WindChillIndexFrm : public wxFrame
 {
 	private:
 		DECLARE_EVENT_TABLE();
-		
+
 	public:
 		WindChillIndexFrm(wxWindow *parent, wxWindowID id = 1, const wxString &title = wxT("WindChillIndex"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = WindChillIndexFrm_STYLE);
 		virtual ~WindChillIndexFrm();
@@ -49,7 +50,7 @@ class WindChillIndexFrm : public wxFrame
 		//void WxEdit1Updated(wxCommandEvent& event);
 		void WxButton3Click(wxCommandEvent& event);
 
-		
+
 	private:
 		//Do not add custom control declarations between
 		//GUI Control Declaration Start and GUI Control Declaration End.
@@ -64,7 +65,7 @@ class WindChillIndexFrm : public wxFrame
 		wxButton *WxButton2;
 		wxButton *WxButton1;
 		////GUI Control Declaration End
-		
+
 	private:
 		//Note: if you receive any error with these enum IDs, then you need to
 		//change your old form code that are based on the #define control IDs.
@@ -84,7 +85,7 @@ class WindChillIndexFrm : public wxFrame
 			////GUI Enum Control ID End
 			ID_DUMMY_VALUE_ //don't remove this value unless you have other enum values
 		};
-		
+
 	private:
 		void OnClose(wxCloseEvent& event);
 		void CreateGUIControls();

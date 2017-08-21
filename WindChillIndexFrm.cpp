@@ -1,4 +1,4 @@
-ï»¿///-----------------------------------------------------------------
+///-----------------------------------------------------------------
 ///
 /// @file      WindChillIndexFrm.cpp
 /// @author    Oxygen
@@ -10,6 +10,7 @@
 
 #include "WindChillIndexFrm.h"
 #include "Wind_chill_effect.h"
+#include <wx/msgdlg.h>
 //Do not add custom headers between
 //Header Include Start and Header Include End
 //wxDev-C++ designer will remove them
@@ -26,7 +27,7 @@
 BEGIN_EVENT_TABLE(WindChillIndexFrm,wxFrame)
 	////Manual Code Start
 	////Manual Code End
-	
+
 	EVT_CLOSE(WindChillIndexFrm::OnClose)
 	EVT_BUTTON(ID_WXBUTTON3,WindChillIndexFrm::WxButton3Click)
 	EVT_BUTTON(ID_WXBUTTON2,WindChillIndexFrm::WxButton2Click)
@@ -74,7 +75,7 @@ void WindChillIndexFrm::CreateGUIControls()
 	SetIcon(WindChillIndexFrm_frmNewForm_XPM);
 	SetSize(8,8,320,207);
 	Center();
-	
+
 	////GUI Items Creation End
 }
 
@@ -103,10 +104,10 @@ void WindChillIndexFrm::WxButton2Click(wxCommandEvent& event)
 
 	double Vwind = 0, Temp = 0;
     if(!WxEdit2->GetValue().ToDouble(&Vwind) || !WxEdit1->GetValue().ToDouble(&Temp)){
-        MessageBox(NULL, _T("Please enter correct value!"), _T("Error"), wxICON_ERROR);
+        wxMessageBox( _T("Please enter correct value!"), _T("Error"), wxICON_ERROR);
     }
-    
-    wxString AnsString = wxString::Format(wxT("Wind-Chill Index:%lf"), GetWindChillIndex(Vwind,Temp));                         
+
+    wxString AnsString = wxString::Format(wxT("Wind-Chill Index:%lf"), GetWindChillIndex(Vwind,Temp));
     WxStaticText1->SetLabel(AnsString);
 }
 
@@ -117,6 +118,6 @@ void WindChillIndexFrm::WxButton2Click(wxCommandEvent& event)
 void WindChillIndexFrm::WxButton3Click(wxCommandEvent& event)
 {
 	// insert your code here
-	wxString About="Designed by oxygen\nCompile Date:2017/08/19\n\n³oµ{¦¡©l©ó¨º°gÀÛªº®É´Á\n¦³µÛ¨º¨Ç¥¼³Q¶D»¡ªº¬G¨Æ";
-    MessageBox(NULL, About, _T("About"), wxICON_INFORMATION);
+	wxString About="Designed by oxygen\nCompile Date:2017/08/19\n1.0.0-Linux\n\nThis's a memory software.";
+    wxMessageBox(About, _T("About"),  wxOK);
 }

@@ -1,11 +1,11 @@
-#include <windows.h>
+//#include <windows.h>
 #include <iostream>
 #include <math.h>
 
 double GetWindChillIndex(double vwind,double temp)
 {
     double vwinda,vwindb,tempa,tempb;
-  
+
     vwinda=pow(vwind,0.16);
     vwindb=pow(vwind,0.15);
 
